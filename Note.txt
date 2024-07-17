@@ -1,0 +1,4 @@
+
+node ace migration:run
+node ace serve
+node ace serve --watch
