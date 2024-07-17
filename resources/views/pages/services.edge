@@ -1,0 +1,13 @@
+@layout.app({ title: "Welcome page title" })
+@slot('meta')
+<meta name="description" content="A welcome page made with EdgeJS">
+@endslot
+<div class="mx-auto max-w-screen-xl py-4 mt-4">
+  <h2
+    class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+    {{ title }}</h2>
+  <div class="article">
+    <p class="my-4 text-lg text-gray-500">{{ paragraph }} </p>
+  </div>
+</div>
+@end

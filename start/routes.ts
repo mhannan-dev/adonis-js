@@ -10,3 +10,6 @@
 import router from '@adonisjs/core/services/router'
 
 router.get('', '#controllers/homes_controller.index').as('home.page')
+router.get('about', '#controllers/homes_controller.about').as('about.page')
+router.get('services', '#controllers/homes_controller.services').as('services.page')
+router.get('contact', '#controllers/homes_controller.contact').as('contact.page')
