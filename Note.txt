@@ -1,4 +1,7 @@
 
 node ace migration:run
-node ace serve
 node ace serve --watch
+
+node ace migration:fresh
+node ace db:seed
+npm run reset-db
