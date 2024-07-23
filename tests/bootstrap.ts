@@ -17,7 +17,6 @@ export const plugins: Config['plugins'] = [assert(), pluginAdonisJS(app)]
 /**
  * Configure lifecycle function to run before and after all the
  * tests.
- *
  * The setup functions are executed before all the tests
  * The teardown functions are executer after all the tests
  */
