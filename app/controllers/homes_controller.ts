@@ -1,13 +1,12 @@
 import Post from '#models/post'
 import type { HttpContext } from '@adonisjs/core/http'
 
-
 export default class HomesController {
 
-  public async index({ view, request  }: HttpContext) {
-    const page = request.input('page', 2)
-    const data= Post.query().paginate(page)
-    return view.render('pages/frontend/welcome', data)
+  public async index({ view  }: HttpContext) {
+    const posts = await Post.all()
+    console.log(posts);
+    return view.render('pages/frontend/welcome', { posts })
   }
 
   public async about({ view }: HttpContext) {

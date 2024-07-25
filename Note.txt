@@ -7,3 +7,6 @@ node ace  list:routes
 node ace migration:fresh
 node ace db:seed
 npm run reset-db
+
+
+adonis –version
